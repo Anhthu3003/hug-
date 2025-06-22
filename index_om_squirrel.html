@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ôm Cỏ từ Sóc 💖</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #fceff9, #e3f6f5);
+      font-family: 'Segoe UI', 'Roboto', sans-serif;
+      color: #444;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .icon-hug {
+      font-size: 5em;
+      margin-top: 20px;
+    }
+
+    .typewriter {
+      width: 95%;
+      max-width: 500px;
+      margin: 30px auto 20px;
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #ff4d88;
+      border-right: 2px solid #ff4d88;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #ff4d88 }
+    }
+
+    button {
+      background: #ffb6c1;
+      border: none;
+      border-radius: 25px;
+      padding: 14px 28px;
+      font-size: 1.2em;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #ff99aa;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 0.95em;
+      color: #888;
+    }
+
+    .explosion {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      font-size: 2.5em;
+      transform: translate(-50%, -50%);
+      animation: explode 0.8s ease-out forwards;
+      pointer-events: none;
+    }
+
+    @keyframes explode {
+      0% { opacity: 1; transform: scale(1) translate(-50%, -50%); }
+      100% { opacity: 0; transform: scale(3) translate(-50%, -50%); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="icon-hug">🫂💕🫂</div>
+
+  <div class="typewriter">Cỏ iu ơi em ở đâyy, về thì ôm em nhéeee 💌</div>
+
+  <button onclick="hug()">Ôm Sóc 🫂</button>
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2023/03/16/audio_31ff468a04.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="footer">
+    Trang web này được Sóc tạo riêng cho Cỏ iu trên điện thoại nè 💖
+  </div>
+
+  <script>
+    function hug() {
+      const explosion = document.createElement("div");
+      explosion.className = "explosion";
+      explosion.innerText = "💥💖💋💞💕💘";
+      document.body.appendChild(explosion);
+      setTimeout(() => {
+        explosion.remove();
+        alert("Cảm ơn bạn đã ôm em Sóc, em Sóc iu bạn nhiều lắmmmm 💞");
+      }, 800);
+    }
+  </script>
+
+</body>
+</html>
