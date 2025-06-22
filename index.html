@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Gửi cỏ một cái ôm 💖</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to top, #ffe6f0, #fff0f5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff6699;
+      animation: pop 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes pop {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); }
+    }
+
+    .hug {
+      font-size: 5em;
+      animation: hugMove 2s infinite ease-in-out;
+    }
+
+    @keyframes hugMove {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      pointer-events: none;
+    }
+
+    .heart span {
+      font-size: 2em;
+      color: #ff6699;
+      animation: floatUp 5s infinite;
+      opacity: 0.8;
+      margin: 0 5px;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-100vh); opacity: 0; }
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #ff99cc;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    button:hover {
+      background-color: #ff66a3;
+    }
+  </style>
+</head>
+<body>
+  <div class="hug">🤗</div>
+  <h1>Gửi em một cái ôm thật chặt nè!</h1>
+  <p style="color: #ff6699;">Dù xa cách, nhưng lúc nào cũng bên nhau trong tim nha 💞</p>
+  <button onclick="alert('Ôm chặt nèeee! 🫂')">Nhận ôm nè!</button>
+
+  <div class="heart">
+    <span>💖</span>
+    <span>💓</span>
+    <span>💕</span>
+    <span>💞</span>
+    <span>💗</span>
+    <span>💘</span>
+    <span>❤️</span>
+  </div>
+</body>
+</html>
